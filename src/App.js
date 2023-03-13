@@ -1,6 +1,7 @@
 import Assignment1 from "./components/Assignment1";
 import ExpenseItem from "./components/ExpenseItem";
 import Expenses from "./components/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
   const expenses = [
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       {/* <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
@@ -49,7 +50,7 @@ function App() {
         date={expenses[3].date}
       ></ExpenseItem> */}
       {/* <Assignment1 data={expenses}></Assignment1> */}
-      <Expenses items={expenses}/>
+      <Expenses items={expenses} />
     </div>
   );
 }
